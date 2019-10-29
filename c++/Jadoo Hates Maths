@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+#include<stdlib.h>
+#include<stdio.h>
+int main()
+{
+    int n;
+    cin>>n;
+    
+    while(n<=251)
+    {
+          if(n==29)
+        {
+            cout<<n+11;
+            break;
+        }
+        
+        if(n==1)
+        {
+        cout<<n+1;
+        break;
+        }
+        n++;
+        if(n%3==0)
+        {
+            n++;
+            if(n%10==3)
+            n++;
+            cout<<n;
+            break;
+        }
+        if(n%10==3)
+        {
+            n++;
+            if(n%3==0)
+            n++;
+            cout<<n;
+            break;
+        }
+      
+        
+    }
+    return 0;
+}
+
+    
